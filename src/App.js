@@ -30,7 +30,11 @@ function App() {
   return (
     <div>
        <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={
+            <RequireAuth>
+                <Home />
+            </RequireAuth>
+          } />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/about" element={
             <RequireAuth>
@@ -41,7 +45,9 @@ function App() {
 
       <hr />
       
-      <Link to="/">Home</Link>
+      <Link to="/">Home</Link> 
+      <br />
+      <br />
       <Link to="/about">About</Link>
 
     </div>

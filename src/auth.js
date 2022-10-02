@@ -1,4 +1,4 @@
-const fakeAuthenticated = () => !true;
+const fakeAuthenticated = () => false;
 
 
 export default fakeAuthenticated;

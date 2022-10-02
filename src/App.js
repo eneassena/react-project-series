@@ -11,19 +11,7 @@ import Home from './pages/index';
 import About from './pages/about';
 import LoginPage from './pages/login';
 
-import fakeAuthenticated  from './auth';
- 
-const RequireAuth = ({ children }) => {
-  let location = useLocation();
-
-
-  if(!fakeAuthenticated()) {
-    return <Navigate to="/login" state={{ from: location }} replace />;
-  }
-
-  return children;
-
-}
+import RequireAuth from "./pages/autenticacao/requireAuth"; 
 
 
 function App() {

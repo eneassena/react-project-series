@@ -1,4 +1,4 @@
-import { RouteRoot } from "./route";
+import { RouteRoot } from "./route/route";
 
 
 function App() {

@@ -6,10 +6,10 @@ import {
     Route
 } from 'react-router-dom';
 
-import RequireLogin from './page/autenticacao/requireLogin';
-import Login from './page/autenticacao/login';
-import Protected from './page/autenticacao/protected';
-  
+import RequireLogin from '../page/autenticacao/requireLogin';
+import Login from '../page/autenticacao/login';
+import Protected from '../page/autenticacao/protected';
+import Home from '../page/home/home';
  
 
 export const RouteRoot = function() {
@@ -17,6 +17,7 @@ export const RouteRoot = function() {
         <>
             <BrowserRouter>
                 <Routes>
+                    <Route index path="/" element={<Home />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/protected" element={
                         <RequireLogin>

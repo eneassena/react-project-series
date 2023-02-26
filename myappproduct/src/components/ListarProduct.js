@@ -40,31 +40,4 @@ export const ListarProduct = (props) => {
     )
 }
 
-export const ListarProductById = (props) => {
-    return (
-        <>
-            <h1>produto {props.product.name}</h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th>#ID</th>
-                        <th>Name</th>
-                        <th>Count</th>
-                        <th>Type</th>
-                        <th>Count</th>
-                        <th>Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr key={props.product.id}>
-                        <td>{props.product.id}</td>
-                        <td>{props.product.name}</td>
-                        <td>{props.product.type}</td>
-                        <td>{props.product.count}</td>
-                        <td>{props.product.price}</td>
-                    </tr> 
-                </tbody>
-            </table>
-        </>
-    )
-}
+ 
